@@ -5,20 +5,15 @@ Rust projects.
 
 ## Contents
 
-It is derived from `alpine:edge` and includes:
+It is derived from the official rust image and includes:
  - `rustup`
  - `cargo`
  - `rustfmt`
  - `clippy`
  - `cargo-kcov` (and the underlying `kcov` binary)
-
-The following don't install cleanly on musl-based distros like Alpine so I've
-omitted them for now.
  - `cargo-readme`
  - `cargo-tree`
  - `cargo-outdated`
-
-`rustup` is invoked to select the `stable` Rust release.
 
 ## Usage
 
@@ -36,7 +31,12 @@ image: bradqwood/rus-build-docker:latest
 ...
 ```
 
+## TODO
+
+ - Reduce image size (I've looked at alpine but a number of the build tools
+   won't compile against musl c lib)
+
 ## Credits
 
  - [ko1nksm/kcov-alpine-docker](https://github.com/ko1nksm/kcov-alpine-docker)
-   where I nicked most of the `kcov` stuff.
+   for inspiration / code for the `kcov` stuff.
