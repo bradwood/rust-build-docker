@@ -40,4 +40,3 @@ image: bradqwood/rus-build-docker:latest
 
  - [ko1nksm/kcov-alpine-docker](https://github.com/ko1nksm/kcov-alpine-docker)
    where I nicked most of the `kcov` stuff.
-
