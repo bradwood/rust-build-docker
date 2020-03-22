@@ -11,9 +11,12 @@ It is derived from `alpine:edge` and includes:
  - `rustfmt`
  - `clippy`
  - `cargo-kcov` (and the underlying `kcov` binary)
- > - `cargo-readme`
- > - `cargo-tree`
- > - `cargo-outdated`
+
+The following don't install cleanly on musl-based distros like Alpine so I've
+omitted them for now.
+ - `cargo-readme`
+ - `cargo-tree`
+ - `cargo-outdated`
 
 `rustup` is invoked to select the `stable` Rust release.
 
