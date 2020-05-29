@@ -14,6 +14,8 @@ It is derived from the official rust image and includes:
  - `cargo-readme`
  - `cargo-tree`
  - `cargo-outdated`
+ - `cargo-tarpaulin`
+ - `just`
 
 ## Usage
 
