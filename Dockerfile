@@ -1,4 +1,4 @@
-FROM rust:1.42-stretch as builder
+FROM rust:1.43-stretch as builder
 RUN apt-get update && \
     apt-get install -y \
         binutils-dev \
@@ -22,7 +22,7 @@ RUN mkdir build && cd build \
 
 
 
-FROM rust:1.42-stretch
+FROM rust:1.43-stretch
 RUN apt-get update && \
     apt-get install -y \
     binutils \
@@ -44,4 +44,6 @@ RUN rustup update \
       cargo-readme \
       cargo-tree \
       cargo-outdated \
+      cargo-tarpaulin \
+      just \
       ;
