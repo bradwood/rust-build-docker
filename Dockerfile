@@ -45,6 +45,7 @@ RUN rustup update \
       cargo-tree \
       cargo-outdated \
       cargo-tarpaulin \
+      cargo-bump \
       graphql_client_cli \
       just \
       ;
