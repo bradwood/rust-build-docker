@@ -28,6 +28,7 @@ RUN apt-get update && \
     binutils \
     libcurl4-openssl-dev \
     zlib1g \
+    jq \
     libdw1 \
     && \
     apt-get clean && \
