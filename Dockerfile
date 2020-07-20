@@ -1,4 +1,4 @@
-FROM rust:1.43-stretch as builder
+FROM rust:1.45-stretch as builder
 RUN apt-get update && \
     apt-get install -y \
         binutils-dev \
@@ -19,7 +19,6 @@ RUN wget -q $KCOV -O - | tar xz -C ./ --strip-components 1
 RUN mkdir build && cd build \
  && cmake -G Ninja .. \
  && cmake --build . --target install
-
 
 
 FROM rust:1.43-stretch
