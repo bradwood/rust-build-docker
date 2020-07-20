@@ -21,7 +21,7 @@ RUN mkdir build && cd build \
  && cmake --build . --target install
 
 
-FROM rust:1.43-stretch
+FROM rust:1.45-stretch
 RUN apt-get update && \
     apt-get install -y \
     binutils \
